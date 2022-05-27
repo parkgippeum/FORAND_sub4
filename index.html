@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="images/favicon.png" rel="icon" type="image/png"sizes="32x32"><!-- favicon -->
+    <link rel="stylesheet" href="css/style2.css"><!-- css -->
+    <!-- AOS스크롤 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <div id="header"><!-- header s --> 
+        <ul class="icon">
+            <li><a href="login.html"><img src="images/login.png" alt="로그인아이콘"></a></li>
+            <li><a href="#"><img src="images/mypage.png" alt="마이페이지아이콘"></a></li>
+            <li><a href="#"><img src="images/cart.png" alt="장바구니아이콘"></a></li>
+        </ul>
+
+        <div class="logo">   
+            <a href="../forand/main.html"><img src="images/logo.png" alt="forand로고"></a>
+        </div>
+        <div class="scroll-content"></div>
+        
+</div><!-- haeder f -->
+
+<div class="nav"> <!-- nav s -->
+    <ul>
+        <li><a href="#">BRAND</a>
+            <div class="sub_bg">
+                <ul class="sub">
+                    <li class="gnb"><a href="../forand_sub01/brandsotry.html#contents1">BRAND STORY</a></li>
+                    <li class="gnb"><a href="../forand_sub01/brandsotry.html#contents2">PRODUCTION</a></li>
+                    <li class="gnb"><a href="../forand_sub01/brandsotry.html#contents3">PRODUCT</a></li>
+                    <li class="sub1_img"><img src="images/sub1.jpg" alt="sub1 이미지"></li>
+                </ul>
+            </div>
+            
+        </li>
+        <li><a href="#">SHOP</a>
+            <div class="sub_bg">
+                <ul class="sub">
+                    <li><a href="../forand_sub02/shop.html#contents1"><img src="images/sub2.png" alt="sub2 이미지"></a></li>
+                    <li class="gnb"><a href="../forand_sub02/shop.html#contents2">NEW</a></li>
+                    <li class="gnb"><a href="../forand_sub02/shop.html#contents3">PRODUCT</a></li>
+                    <li class="gnb"><a href="../forand_sub02/shop.html#contents4">EVENT</a></li>
+                </ul>
+            </div>
+        </li>
+        <li><a href="#">MEMBERSHIP</a>
+            <div class="sub_bg">
+                <ul class="sub">
+                    <li class="gnb"><a href="../forand_sub03/membership.html#contents1">MEMBERSHIP CARD</a></li>
+                    <li class="gnb"><a href="../forand_sub03/membership.html#contents2">FORAND 혜택</a></li>
+                    <li class="gnb"><a href="../forand_sub03/membership.html#contents3">MEMBERSHIP 등급</a></li>
+                    <li><a href="../forand_sub03/membership.html#contents4"><img src="images/sub3.png" alt="sub3 이미지"></a></li>
+                </ul>
+            </div>
+        </li>
+        <li><a href="#">COMMUNITY</a>
+            <div class="sub_bg">
+                <ul class="sub">
+                    <li class="sub4_img"><a href="../forand_sub04/community.html#banner"><img src="images/sub4.jpg" alt="sub4 이미지"></a></li>
+                    <li class="gnb"><a href="../forand_sub04/community.html#contents1">FAQ</a></li>
+                    <li class="gnb"><a href="../forand_sub04/community.html#contents2">공지사항</a></li>
+                    <li class="gnb"><a href="../forand_sub04/community.html#box3">1:1문의</a></li>
+                    <li class="gnb"><a href="../forand_sub04/community.html#box3">CONTECT US</a></li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+</div> <!-- nav f -->
+
+<div id="contents">
+    <div id="contents"><!--contents 시작-->
+        <h1>1:1문의하기</h1>
+        <p class="comment">고객님들의 문의사항을 답변해드립니다.</p>
+
+    <h2>1:1 문의</h2>
+    <form name="visit" method="post" action="#">
+    <fieldset>
+    <legend>1:1문의하기</legend>
+    <table>
+        <tr>
+            <th><label for="name">신청자</label></th>
+            <td><input type="text" placeholder="이름" name="name" id="name" maxlength="20" title="신청자 입력"></td>
+        </tr>
+        <th><label for="phone">문의 유형</label></th>
+            <td>
+                <select name="phone" id="phone" title="휴대폰 앞번호">
+                    <option value="a">주문확인</option>
+                    <option value="b">배송일/배송지연</option>
+                    <option value="c">누락 및 오배송</option>
+                    <option value="d">배송전 취소요청</option>
+                    <option value="e">환불</option>
+                    <option value="f">반품/교환</option>
+                    <option value="g">기타</option>
+                </select>
+        <tr>
+            <th><label for="phone1">연락처</label></th>
+            <td>
+                <select name="phone1" id="phone1" title="휴대폰 앞번호">
+                    <option value="010">010</option>
+                    <option value="011">011</option>
+                    <option value="016">016</option>
+                    <option value="017">017</option>
+                    <option value="018">018</option>
+                    <option value="019">019</option>
+                </select>
+                -
+                <input type="text" name="phone2" id="phone2" size="5" maxlength="4" title="휴대폰 중간번호">
+                -
+                <input type="text" name="phone3" id="phone3" size="5" maxlength="4" title="휴대폰 끝번호">
+            </td>
+        </tr>
+        
+        <tr>
+            <th><label for="email">이메일</label></th>
+            <td><input type="text" name="email" id="email" size="30" title="이메일 입력" class="mg"> 예시 : test@lotte.com</td>
+        </tr>
+    
+        <tr>
+            <th>연령</th>
+            <td class="age_pd">
+                    <input type="checkbox" name="age" id="age1" value="10">
+                    <label for="age1"> 10대</label>
+                    <input type="checkbox" name="age" id="age2" value="20">
+                    <label for="age2"> 20대</label>
+                    <input type="checkbox" name="age" id="age3" value="30">
+                    <label for="age3"> 30대</label>
+                    <input type="checkbox" name="age" id="age4" value="40">
+                    <label for="age4"> 40대</label>
+                    <input type="checkbox" name="age" id="age5" value="50">
+                    <label for="age5"> 50대</label>
+            </td>
+        </tr>
+        
+        <tr>
+            <th>문의내용</th>
+            <td><textarea name="purpose" title="견학 목적 입력"></textarea></td>
+        </tr>
+</table>
+
+<p class="btn"><input type="submit" value="확인"> <input type="reset" value="취소"></p>
+</fieldset>
+</form>
+</div>
+
+<div id="footer"><!-- footer s -->
+    <div class="footer_inner">
+        <a href="index.html" class="footer_logo"><img src="images/footer_logo.png" alt="footer_logo"></a>
+
+        <p class="text">
+            FORAND  |  대표이사 : 박기쁨,  부산광역시 강서구 명지국제5로 <br>
+            사업자등록번호 : 135-81-05033  <br>
+            고객상담 : 010-2987-4437 <br>
+            © FORAND. ALL RIGHTS RESERVED.
+        </p>
+
+        <div class="sns">
+            <ul class="sns_icon">
+                <li><a href="https://www.youtube.com/"><img src="images/youtube.png" alt="유튜브아이콘"></a></li>
+                <li><a href="#"><img src="images/instagram.png" alt="인스타그램아이콘"></a></li>
+                <li><a href="#"><img src="images/facebook.png" alt="페이스북아이콘"></a></li>
+                <li><a href="#"><img src="images/twitter.png" alt="트위터아이콘"></a></li>
+            </ul>
+        </div>
+    </div>
+</div><!-- footer f -->
+
+<a href="#" class="top"><img src="images/top.png" alt="top버튼"></a>
+
+<!--js 메뉴상단고정-->
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/script1.js"></script>
+</body>
+</html>
