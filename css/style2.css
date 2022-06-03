@@ -73,7 +73,7 @@ body{font-family: 'Noto Sans kr';
 .sub li a:hover{color: rgb(231, 198, 155);}
 
 .scroll-content{
-    height: 2000px;
+    height: 1000px;
 }
 .scroll-fixed{
     position: fixed;
